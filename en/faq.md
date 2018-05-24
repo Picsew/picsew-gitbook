@@ -14,7 +14,7 @@ This is a bug in iOS 10. When the image's file size is too big, viewing the imag
 
 **Why does the image look very blurry after saving it to the system photo album?**
 
-This is a bug in iOS 11. When the image is saved in PNG format and the file size is too big, it may looked very blurry in the system photo album, but the quality of image is perfectly fine. Sending it to a computer enables it to be used normally. Chose the **"Prefers Saving as PNG"** option to solve this problem.
+This is a bug in iOS 11. When the image is saved in PNG format and the file size is too big, it may look very blurry in the system photo album, but the quality of image is perfectly fine. Sending it to a computer enables it to be used normally. Chose the **"Prefers Saving as PNG"** option to solve this problem.
 
 ---
 
@@ -24,7 +24,7 @@ Because the principle of adding a mockup is not cutting the original image, so o
 
 ---
 
-**Why after adding a device mockup, viewing it in the system album, the top and the bottom of image are both cut off?**
+**Why after adding a device mockup, viewing it in the system album, the top and the bottom of the image are both cut off?**
 
 This is the display problem of the system album. Double-click the image to zoom in, then pinch to zoom out, now you can see the complete image.
 
