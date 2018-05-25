@@ -1,5 +1,8 @@
 {
 	"plugins": [
-		"-lunr", "-search", "search-pro"
-	]
+		"-lunr", "-search", "search-pro", "custom-favicon"
+	],
+	"pluginsConfig" : {
+        "favicon": "favicon.ico"
+    }
 }
