@@ -2,6 +2,8 @@
 
 * [Picsew Documentation](README.md)
 
+* [Basic Usage](basic-usage.md)
+
 * [FAQ](faq.md)
 
 * [App Support](support.md)

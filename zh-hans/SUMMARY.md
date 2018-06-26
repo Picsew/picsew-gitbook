@@ -2,6 +2,8 @@
 
 * [Picsew 文档](README.md)
 
+* [基础用法](basic-usage.md)
+
 * [常见问题](faq.md)
 
 * [App 支持](support.md)
