@@ -18,12 +18,6 @@ This is a bug in iOS 11. When the image is saved in PNG format and the file size
 
 ---
 
-**Why does the device mockup function sometimes disappear?**
-
-Because the principle of adding a mockup is not cutting the original image, so only when the ratio of the stitching result is long enough, the appropriate device mockup can be added. The app will automatically select iPad, iPhone or iPhone X as the mockup according to the ratio of the stitching result.
-
----
-
 **Why after adding a device mockup, viewing it in the system album, the top and the bottom of the image are both cut off?**
 
 This is the display problem of the system album. Double-click the image to zoom in, then pinch to zoom out, now you can see the complete image.

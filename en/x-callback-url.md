@@ -32,9 +32,27 @@ Use the specified images for Horizontal Stitching.
 
 - **watermark** *(optional)* Specifies whether to add watermark. The allowed values ​​are `single` and `repeat`. By default, no watermark is added. Both watermark text and location use the default watermark setting in the App. If default setting not configure properly, the final result will not have a watermark. When `single`, add a single watermark to the default position of the result image. When `repeat`, a watermark is added to the default position of each image.
 
-- **border** *(optional, only available in v2.7.2 and later)* Specify whether to add borders. The allowed values are `inside` and `all`. By default, no border is added. When `inside`, add borders inside the result image. When `all`, add borders inside and outside the result image.
+- **border** *(optional)* Specify whether to add borders. The allowed values are `inside` and `all`. By default, no border is added. When `inside`, add borders inside the result image. When `all`, add borders inside and outside the result image.
 
-- **mockup** *(optional)* Specifies whether to add the device mockup. The allowed values ​​are `white` and `black`. The mockup is not added by default. The mockup is automatically selected. The selection logic is consistent with the App. If the proportion of result image is not long enough, the final result will still not add a mockup. When `white`, gold color is selected by default (iPhone X is silver color), and when `black` is selected, gray color is selected by default.
+- **mockup** *(optional)* Specify whether to add the device mockup. The format of allowed values is `<color>[_<model>]`. The allowed values of `<color>` ​​are `white` and `black`. The allowed values of `<model>` are `iphonex`, `iphone`, `ipad` and `watch`. The mockup is not added by default. The mockup model is automatically selected to be the same model with current device if not specify `<model>`. 
+
+  The relationship between the parameter color and the actual color is as follows:
+
+|  Model   |   White   |   Black    |
+| :------- | :-------- | :--------- |
+| iPhone X | Silver    | Space Gray |
+| iPhone   | Gold      | Space Gray |
+| iPad     | Rose Gold | Space Gray |
+| Watch    | White     | Black      |
+
+  Here are some examples:
+
+|    Example    |     Model and Color     |
+| :------------ | :---------------------- |
+| white_iphonex | Silver Color iPhone X   |
+| black_iphone  | Space Gray Color iPhone |
+| white_ipad    | Rose Gold Color iPad    |
+| black_watch   | Black Color Apple Watch |
 
 - **clean_status** *(optional)* Specifies whether the status bar needs to be cleared. When `yes`, the status bar is automatically cleared. The default is not clear.
 
@@ -60,7 +78,6 @@ picsew://x-callback-url/vert?in=latest&count=3&out=copy&mockup=white
 
 This workflow allows you to select a number of latest screenshots, run Picsew to automatically stitching them together, save the result to the photo album, then return to Workflow, check the result, delete the source images.
 
-
 **[Recent Scrollshot](https://workflow.is/workflows/b3084df208c34b74877471bddad84576)** *widget*
 
 This workflow will automatically detect recent screenshots, run Picsew to automatically stitching them together, adding mockup or cleaning status bar by your selection, save the result to the photo album, delete the source images, then return to Workflow, check the result.
@@ -68,3 +85,10 @@ This workflow will automatically detect recent screenshots, run Picsew to automa
 **[Create Scrollshot](https://workflow.is/workflows/a9c746a2306e400c914d274b5d0998bd)** *action*
 
 This workflow use your selected screenshots as input, run Picsew to automatically stitching them together, adding mockup or cleaning status bar by your selection, save the result to the photo album, then return to Workflow, check the result, delete the source images.
+
+## Change Log
+
+| App Version |          Category          |              Details              |
+| :---------- | :------------------------- | :-------------------------------- |
+| 2.7.2       | New Action Parameter       | Add **border**                    |
+| 2.8         | New Action Parameter Value | Add model selection to **mockup** |
