@@ -1,12 +1,12 @@
 # App 支持
 
-如果您對 Picsew 有任何疑問，您可以通過多種渠道聯系到我。
+如果您對 Picsew 有任何疑問，您可以通過多種渠道聯繫到我。
 
 ### 發送郵件
 
 <i class="fa fa-envelope"></i> 郵箱: [picsewapp@gmail.com](mailto:picsewapp@gmail.com)
 
-### 社交網絡
+### 社交網路
 
 <i class="fa fa-weibo"></i> 微博: [@sugarmo87](https://weibo.com/sugarmo)
 

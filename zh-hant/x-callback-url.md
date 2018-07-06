@@ -74,7 +74,7 @@ picsew://x-callback-url/vert?in=latest&count=3&out=copy&watermark=repeat
 
 ## Workflow 例子
 
-**[制作長截圖](https://workflow.is/workflows/e9b64bc79d854bb0a9f9531d6cab5bdd)** *掛件*
+**[製作長截圖](https://workflow.is/workflows/e9b64bc79d854bb0a9f9531d6cab5bdd)** *掛件*
 
 這個工作流會讓你選擇最新截圖的數量，調起 Picsew 來自動拼接，保存圖片到相冊，然回到 Workflow，查看結果，刪除來源圖片。
 
