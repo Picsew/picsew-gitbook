@@ -32,7 +32,7 @@ Use the specified images for Horizontal Stitching.
 
 - **watermark** *(optional)* Specifies whether to add watermark. The allowed values ​​are `single` and `repeat`. By default, no watermark is added. Both watermark text and location use the default watermark setting in the App. If default setting not configure properly, the final result will not have a watermark. When `single`, add a single watermark to the default position of the result image. When `repeat`, a watermark is added to the default position of each image.
 
-- **border** *(optional)* Specify whether to add borders. The allowed values are `inside` and `all`. By default, no border is added. When `inside`, add borders inside the result image. When `all`, add borders inside and outside the result image.
+- **border** *(optional)* Specify whether to add borders. The allowed values are `inside`, `outside` and `all`. By default, no border is added. When `inside`, add borders inside the result image. When `outside`, add borders outside the result image. When `all`, add borders inside and outside the result image. If you want to specify the width, you can add `_<0~100>` at the end, for example `inside_60`.
 
 - **mockup** *(optional)* Specify whether to add the device mockup. The format of allowed values is `<color>[_<model>]`. The allowed values of `<color>` ​​are `white` and `black`. The allowed values of `<model>` are `iphonex`, `iphone`, `ipad` and `watch`. The mockup is not added by default. The mockup model is automatically selected to be the same model with current device if not specify `<model>`. 
 
@@ -88,7 +88,8 @@ This workflow use your selected screenshots as input, run Picsew to automaticall
 
 ## Change Log
 
-| App Version |          Category          |              Details              |
-| :---------- | :------------------------- | :-------------------------------- |
-| 2.7.2       | New Action Parameter       | Add **border**                    |
-| 2.8         | New Action Parameter Value | Add model selection to **mockup** |
+| App Version |          Category          |                        Details                        |
+| :---------- | :------------------------- | :---------------------------------------------------- |
+| 2.7.2       | New Action Parameter       | Add **border**                                        |
+| 2.8         | New Action Parameter Value | Add model selection to **mockup**                     |
+| 2.10        | New Action Parameter Value | **border** Add Outer Border and Border Width Settings |
