@@ -34,25 +34,27 @@ picsew://x-callback-url/[動作]?[動作參數]&[x-callback 參數]
 
 - **border** *（可選）*指定是否加上邊框，可選值為 `inside`、`outside` 和 `all`，預設不加上邊框。當為 `inside` 時，在拼圖內部加上邊框。當為 `outside` 時，在拼圖外部加上邊框。當為 `all` 時，在拼圖的內部和外部都加上邊框。如果想指定寬度，可在後面加上 `_<0~100>`，例如 `inside_60`。
 
-- **mockup** *（可選）*指定是否加上設備外殼，可選值格式為 `<color>[_<model>]`。`<color>` 的可選值為 `white` 和 `black`。`<model>` 的可選值為 `iphonex`、`iphone`、`ipad` 和 `watch`。默認不加上外殼。如果沒有指定 `<model>`，則自動選取跟當前設備一樣的型號。
+- **mockup** *（可選）*指定是否加上設備外殼，可選值格式為 `<color>[_<model>]`。`<color>` 的可選值為 `white` 和 `black`。`<model>` 的可選值為 `iphonex`、`iphonexr`、`iphone`、`ipad` 和 `watch`。默認不加上外殼。如果沒有指定 `<model>`，則自動選取跟當前設備一樣的型號。
 
   參數顏色和實際顏色的關系如下：
 
-|   型號   |  白色  |  黑色  |
-| :------- | :----- | :----- |
-| iPhone X | 銀     | 深空灰 |
-| iPhone   | 金     | 深空灰 |
-| iPad     | 玫瑰金 | 深空灰 |
-| Watch    | 白     | 黑     |
+|     型號    |  白色  |  黑色  |
+| :---------- | :----- | :----- |
+| iPhone X(S) | 金     | 深空灰 |
+| iPhone XR   | 藍     | 藍     |
+| iPhone      | 金     | 深空灰 |
+| iPad        | 玫瑰金 | 深空灰 |
+| Watch       | 白     | 黑     |
 
-  一些例子：
+ 一些例子：
 
-|      例子     |    型號和顏色    |
-| :------------ | :--------------- |
-| white_iphonex | 銀色 iPhone X    |
-| black_iphone  | 深空灰色 iPhone  |
-| white_ipad    | 玫瑰金色 iPad    |
-| black_watch   | 黑色 Apple Watch |
+|      例子      |    型號和顏色    |
+| :------------- | :--------------- |
+| white_iphonex  | 金色 iPhone X    |
+| white_iphonexr | 藍色 iPhone X    |
+| black_iphone   | 深空灰色 iPhone  |
+| white_ipad     | 玫瑰金色 iPad    |
+| black_watch    | 黑色 Apple Watch |
 
 - **clean_status** *（可選）*指定是否需要清理狀態欄，當為 `yes` 時，自動清理狀態欄。默認不清理。
 

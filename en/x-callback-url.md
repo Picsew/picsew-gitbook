@@ -34,25 +34,27 @@ Use the specified images for Horizontal Stitching.
 
 - **border** *(optional)* Specify whether to add borders. The allowed values are `inside`, `outside` and `all`. By default, no border is added. When `inside`, add borders inside the result image. When `outside`, add borders outside the result image. When `all`, add borders inside and outside the result image. If you want to specify the width, you can add `_<0~100>` at the end, for example `inside_60`.
 
-- **mockup** *(optional)* Specify whether to add the device mockup. The format of allowed values is `<color>[_<model>]`. The allowed values of `<color>` ​​are `white` and `black`. The allowed values of `<model>` are `iphonex`, `iphone`, `ipad` and `watch`. The mockup is not added by default. The mockup model is automatically selected to be the same model with current device if not specify `<model>`. 
+- **mockup** *(optional)* Specify whether to add the device mockup. The format of allowed values is `<color>[_<model>]`. The allowed values of `<color>` ​​are `white` and `black`. The allowed values of `<model>` are `iphonex`, `iphonexr`, `iphone`, `ipad` and `watch`. The mockup is not added by default. The mockup model is automatically selected to be the same model with current device if not specify `<model>`. 
 
   The relationship between the parameter color and the actual color is as follows:
 
-|  Model   |   White   |   Black    |
-| :------- | :-------- | :--------- |
-| iPhone X | Silver    | Space Gray |
-| iPhone   | Gold      | Space Gray |
-| iPad     | Rose Gold | Space Gray |
-| Watch    | White     | Black      |
+|   Model   |   White   |   Black    |
+| :-------- | :-------- | :--------- |
+| iPhone X  | Silver    | Space Gray |
+| iPhone XR | Blue      | Blue       |
+| iPhone    | Gold      | Space Gray |
+| iPad      | Rose Gold | Space Gray |
+| Watch     | White     | Black      |
 
   Here are some examples:
 
-|    Example    |     Model and Color     |
-| :------------ | :---------------------- |
-| white_iphonex | Silver Color iPhone X   |
-| black_iphone  | Space Gray Color iPhone |
-| white_ipad    | Rose Gold Color iPad    |
-| black_watch   | Black Color Apple Watch |
+|    Example     |     Model and Color     |
+| :------------- | :---------------------- |
+| white_iphonex  | Silver Color iPhone X   |
+| white_iphonexr | Blue Color iPhone X     |
+| black_iphone   | Space Gray Color iPhone |
+| white_ipad     | Rose Gold Color iPad    |
+| black_watch    | Black Color Apple Watch |
 
 - **clean_status** *(optional)* Specifies whether the status bar needs to be cleared. When `yes`, the status bar is automatically cleared. The default is not clear.
 

@@ -16,4 +16,4 @@
 
 <i class="fa fa-qq"></i> QQ: [529054088](https://jq.qq.com/?_wv=1027&k=5AjFr4f)
 
-<i class="fa fa-paper-plane"></i> Telegram: [picsew_feedback](https://t.me/picsew_feedback)
+<i class="fa fa-paper-plane"></i> Telegram: [picsew_feedback](https://t.me/joinchat/Go1vG0SHSw5HXFFS-_p1iA)
