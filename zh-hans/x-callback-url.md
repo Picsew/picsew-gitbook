@@ -34,27 +34,29 @@ picsew://x-callback-url/[动作]?[动作参数]&[x-callback 参数]
 
 - **border** *（可选）*指定是否加上边框，可选值为 `inside`、`outside` 和 `all`，默认不加上边框。当为 `inside` 时，在拼图内部加上边框。当为 `outside` 时，在拼图外部加上边框。当为 `all` 时，在拼图的内部和外部都加上边框。如果想指定宽度，可在后面加上 `_<0~100>`，例如 `inside_60`。
 
-- **mockup** *（可选）*指定是否加上设备外壳，可选值格式为 `<color>[_<model>]`。`<color>` 的可选值为 `white` 和 `black`。`<model>` 的可选值为 `iphonex`、`iphonexr`、`iphone`、`ipad` 和 `watch`。默认不加上外壳。如果没有指定 `<model>`，则自动选取跟当前设备一样的型号。
+- **mockup** *（可选）*指定是否加上设备外壳，可选值格式为 `<color>[_<model>]`。`<color>` 的可选值为 `white` 和 `black`。`<model>` 的可选值为 `iphone58`、`iphone61`、`iphone65`, `iphone`、`ipad` 和 `watch`。默认不加上外壳。如果没有指定 `<model>`，则自动选取跟当前设备一样的型号。
 
   参数颜色和实际颜色的关系如下：
 
-|     型号    |  白色  |  黑色  |
-| :---------- | :----- | :----- |
-| iPhone X(S) | 金     | 深空灰 |
-| iPhone XR   | 蓝     | 蓝     |
-| iPhone      | 金     | 深空灰 |
-| iPad        | 玫瑰金 | 深空灰 |
-| Watch       | 白     | 黑     |
+| 型号                 | 参数     | 白色   | 黑色   |
+| :----------          | :--      | :----- | :----- |
+| iPhone 11 Pro        | iphone58 | 银     | 暗夜绿 |
+| iPhone 11            | iphone61 | 白     | 黑     |
+| iPhone 11 Pro Max    | iphone65 | 银     | 暗夜绿 |
+| iPhone 8 Plus        | iphone   | 金     | 深空灰 |
+| iPad Pro 12.9-inch   | ipad     | 银     | 深空灰 |
+| Apple Watch Series 4 | watch    | 金     | 深空黑 |
 
   一些例子：
 
-|      例子      |    型号和颜色    |
-| :------------- | :--------------- |
-| white_iphonex  | 金色 iPhone X    |
-| white_iphonexr | 蓝色 iPhone X    |
-| black_iphone   | 深空灰色 iPhone  |
-| white_ipad     | 玫瑰金色 iPad    |
-| black_watch    | 黑色 Apple Watch |
+| 例子           | 型号和颜色                    |
+| :------------- | :---------------              |
+| white_iphone58 | 银色 iPhone 11 Pro            |
+| black_iphone65 | 暗夜绿色 iPhone 11 Pro Max    |
+| white_iphone61 | 白色 iPhone 11                |
+| black_iphone   | 深空灰色 iPhone 8 Plus        |
+| white_ipad     | 银色 iPad Pro 12.9-inch       |
+| black_watch    | 深空黑色 Apple Watch Series 4 |
 
 - **clean_status** *（可选）*指定是否需要清理状态栏，当为 `yes` 时，自动清理状态栏。默认不清理。
 
@@ -88,10 +90,6 @@ picsew://x-callback-url/vert?in=latest&count=3&out=copy&watermark=repeat
 
 这个工作流会根据你选择的截图，调起 Picsew 来自动拼接，并且根据你的选择加上设备外壳或者清理状态栏，保存图片到相册，然回到 Workflow，查看结果，删除来源图片。
 
-## 更改日志
+## 版本
 
-| App 版本 |        类别        |             详情            |
-| :------- | :----------------- | :-------------------------- |
-| 2.7.2    | 新的动作参数       | 添加 **border**             |
-| 2.8      | 新的动作参数可选值 | **mockup** 添加设备型号选择 |
-| 2.10     | 新的动作参数可选值 | **border** 添加外部边框和边框宽度设置 |
+本文档对应 App 版本为 3.0.7

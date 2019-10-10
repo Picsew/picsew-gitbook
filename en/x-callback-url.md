@@ -34,27 +34,29 @@ Use the specified images for Horizontal Stitching.
 
 - **border** *(optional)* Specify whether to add borders. The allowed values are `inside`, `outside` and `all`. By default, no border is added. When `inside`, add borders inside the result image. When `outside`, add borders outside the result image. When `all`, add borders inside and outside the result image. If you want to specify the width, you can add `_<0~100>` at the end, for example `inside_60`.
 
-- **mockup** *(optional)* Specify whether to add the device mockup. The format of allowed values is `<color>[_<model>]`. The allowed values of `<color>` ​​are `white` and `black`. The allowed values of `<model>` are `iphonex`, `iphonexr`, `iphone`, `ipad` and `watch`. The mockup is not added by default. The mockup model is automatically selected to be the same model with current device if not specify `<model>`. 
+- **mockup** *(optional)* Specify whether to add the device mockup. The format of allowed values is `<color>[_<model>]`. The allowed values of `<color>` ​​are `white` and `black`. The allowed values of `<model>` are `iphone58`, `iphone61`, `iphone65`, `iphone`, `ipad` and `watch`. The mockup is not added by default. The mockup model is automatically selected to be the same model with current device if not specify `<model>`. 
 
   The relationship between the parameter color and the actual color is as follows:
 
-|   Model   |   White   |   Black    |
-| :-------- | :-------- | :--------- |
-| iPhone X  | Silver    | Space Gray |
-| iPhone XR | Blue      | Blue       |
-| iPhone    | Gold      | Space Gray |
-| iPad      | Rose Gold | Space Gray |
-| Watch     | White     | Black      |
+| Model                | Param    | White     | Black          |
+| :--------            | :----    | :-------- | :---------     |
+| iPhone 11 Pro        | iphone58 | Silver    | Midnight Green |
+| iPhone 11            | iphone61 | White     | Black          |
+| iPhone 11 Pro Max    | iphone65 | Silver    | Midnight Green |
+| iPhone 8 Plus        | iphone   | Gold      | Space Gray     |
+| iPad Pro 12.9-inch   | ipad     | Silver    | Space Gray     |
+| Apple Watch Series 4 | watch    | White     | Space Black    |
 
   Here are some examples:
 
-|    Example     |     Model and Color     |
-| :------------- | :---------------------- |
-| white_iphonex  | Silver Color iPhone X   |
-| white_iphonexr | Blue Color iPhone X     |
-| black_iphone   | Space Gray Color iPhone |
-| white_ipad     | Rose Gold Color iPad    |
-| black_watch    | Black Color Apple Watch |
+| Example        | Model and Color                        |
+| :------------- | :----------------------                |
+| white_iphone58 | Silver Color iPhone 11 Pro             |
+| black_iphone65 | Midnight Green Color iPhone 11 Pro Max |
+| white_iphone61 | White Color iPhone 11                  |
+| black_iphone   | Space Gray Color iPhone 8 Plus         |
+| white_ipad     | Rose Gold Color iPad Pro 12.9-inch     |
+| black_watch    | Space Black Color Apple Watch Series 4 |
 
 - **clean_status** *(optional)* Specifies whether the status bar needs to be cleared. When `yes`, the status bar is automatically cleared. The default is not clear.
 
@@ -88,10 +90,6 @@ This workflow will automatically detect recent screenshots, run Picsew to automa
 
 This workflow use your selected screenshots as input, run Picsew to automatically stitching them together, adding mockup or cleaning status bar by your selection, save the result to the photo album, then return to Workflow, check the result, delete the source images.
 
-## Change Log
+## Version
 
-| App Version |          Category          |                        Details                        |
-| :---------- | :------------------------- | :---------------------------------------------------- |
-| 2.7.2       | New Action Parameter       | Add **border**                                        |
-| 2.8         | New Action Parameter Value | Add model selection to **mockup**                     |
-| 2.10        | New Action Parameter Value | **border** Add Outer Border and Border Width Settings |
+This document corresponds to the App version 3.0.7
