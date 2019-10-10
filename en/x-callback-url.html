@@ -273,7 +273,7 @@
 </li>
 <li><p><strong>border</strong> <em>(optional)</em> Specify whether to add borders. The allowed values are <code>inside</code>, <code>outside</code> and <code>all</code>. By default, no border is added. When <code>inside</code>, add borders inside the result image. When <code>outside</code>, add borders outside the result image. When <code>all</code>, add borders inside and outside the result image. If you want to specify the width, you can add <code>_&lt;0~100&gt;</code> at the end, for example <code>inside_60</code>.</p>
 </li>
-<li><p><strong>mockup</strong> <em>(optional)</em> Specify whether to add the device mockup. The format of allowed values is <code>&lt;color&gt;[_&lt;model&gt;]</code>. The allowed values of <code>&lt;color&gt;</code> &#x200B;&#x200B;are <code>white</code> and <code>black</code>. The allowed values of <code>&lt;model&gt;</code> are <code>iphonex</code>, <code>iphonexr</code>, <code>iphone</code>, <code>ipad</code> and <code>watch</code>. The mockup is not added by default. The mockup model is automatically selected to be the same model with current device if not specify <code>&lt;model&gt;</code>. </p>
+<li><p><strong>mockup</strong> <em>(optional)</em> Specify whether to add the device mockup. The format of allowed values is <code>&lt;color&gt;[_&lt;model&gt;]</code>. The allowed values of <code>&lt;color&gt;</code> &#x200B;&#x200B;are <code>white</code> and <code>black</code>. The allowed values of <code>&lt;model&gt;</code> are <code>iphone58</code>, <code>iphone61</code>, <code>iphone65</code>, <code>iphone</code>, <code>ipad</code> and <code>watch</code>. The mockup is not added by default. The mockup model is automatically selected to be the same model with current device if not specify <code>&lt;model&gt;</code>. </p>
 <p>The relationship between the parameter color and the actual color is as follows:</p>
 </li>
 </ul>
@@ -281,35 +281,47 @@
 <thead>
 <tr>
 <th style="text-align:left">Model</th>
+<th style="text-align:left">Param</th>
 <th style="text-align:left">White</th>
 <th style="text-align:left">Black</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">iPhone X</td>
+<td style="text-align:left">iPhone 11 Pro</td>
+<td style="text-align:left">iphone58</td>
 <td style="text-align:left">Silver</td>
-<td style="text-align:left">Space Gray</td>
+<td style="text-align:left">Midnight Green</td>
 </tr>
 <tr>
-<td style="text-align:left">iPhone XR</td>
-<td style="text-align:left">Blue</td>
-<td style="text-align:left">Blue</td>
+<td style="text-align:left">iPhone 11</td>
+<td style="text-align:left">iphone61</td>
+<td style="text-align:left">White</td>
+<td style="text-align:left">Black</td>
 </tr>
 <tr>
-<td style="text-align:left">iPhone</td>
+<td style="text-align:left">iPhone 11 Pro Max</td>
+<td style="text-align:left">iphone65</td>
+<td style="text-align:left">Silver</td>
+<td style="text-align:left">Midnight Green</td>
+</tr>
+<tr>
+<td style="text-align:left">iPhone 8 Plus</td>
+<td style="text-align:left">iphone</td>
 <td style="text-align:left">Gold</td>
 <td style="text-align:left">Space Gray</td>
 </tr>
 <tr>
-<td style="text-align:left">iPad</td>
-<td style="text-align:left">Rose Gold</td>
+<td style="text-align:left">iPad Pro 12.9-inch</td>
+<td style="text-align:left">ipad</td>
+<td style="text-align:left">Silver</td>
 <td style="text-align:left">Space Gray</td>
 </tr>
 <tr>
-<td style="text-align:left">Watch</td>
+<td style="text-align:left">Apple Watch Series 4</td>
+<td style="text-align:left">watch</td>
 <td style="text-align:left">White</td>
-<td style="text-align:left">Black</td>
+<td style="text-align:left">Space Black</td>
 </tr>
 </tbody>
 </table>
@@ -323,24 +335,28 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">white_iphonex</td>
-<td style="text-align:left">Silver Color iPhone X</td>
+<td style="text-align:left">white_iphone58</td>
+<td style="text-align:left">Silver Color iPhone 11 Pro</td>
 </tr>
 <tr>
-<td style="text-align:left">white_iphonexr</td>
-<td style="text-align:left">Blue Color iPhone X</td>
+<td style="text-align:left">black_iphone65</td>
+<td style="text-align:left">Midnight Green Color iPhone 11 Pro Max</td>
+</tr>
+<tr>
+<td style="text-align:left">white_iphone61</td>
+<td style="text-align:left">White Color iPhone 11</td>
 </tr>
 <tr>
 <td style="text-align:left">black_iphone</td>
-<td style="text-align:left">Space Gray Color iPhone</td>
+<td style="text-align:left">Space Gray Color iPhone 8 Plus</td>
 </tr>
 <tr>
 <td style="text-align:left">white_ipad</td>
-<td style="text-align:left">Rose Gold Color iPad</td>
+<td style="text-align:left">Rose Gold Color iPad Pro 12.9-inch</td>
 </tr>
 <tr>
 <td style="text-align:left">black_watch</td>
-<td style="text-align:left">Black Color Apple Watch</td>
+<td style="text-align:left">Space Black Color Apple Watch Series 4</td>
 </tr>
 </tbody>
 </table>
@@ -366,33 +382,8 @@
 <p>This workflow will automatically detect recent screenshots, run Picsew to automatically stitching them together, adding mockup or cleaning status bar by your selection, save the result to the photo album, delete the source images, then return to Workflow, check the result.</p>
 <p><strong><a href="https://workflow.is/workflows/a9c746a2306e400c914d274b5d0998bd" target="_blank">Create Scrollshot</a></strong> <em>action</em></p>
 <p>This workflow use your selected screenshots as input, run Picsew to automatically stitching them together, adding mockup or cleaning status bar by your selection, save the result to the photo album, then return to Workflow, check the result, delete the source images.</p>
-<h2 id="change-log">Change Log</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">App Version</th>
-<th style="text-align:left">Category</th>
-<th style="text-align:left">Details</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">2.7.2</td>
-<td style="text-align:left">New Action Parameter</td>
-<td style="text-align:left">Add <strong>border</strong></td>
-</tr>
-<tr>
-<td style="text-align:left">2.8</td>
-<td style="text-align:left">New Action Parameter Value</td>
-<td style="text-align:left">Add model selection to <strong>mockup</strong></td>
-</tr>
-<tr>
-<td style="text-align:left">2.10</td>
-<td style="text-align:left">New Action Parameter Value</td>
-<td style="text-align:left"><strong>border</strong> Add Outer Border and Border Width Settings</td>
-</tr>
-</tbody>
-</table>
+<h2 id="version">Version</h2>
+<p>This document corresponds to the App version 3.0.7</p>
 
                                 
                                 </section>
@@ -432,7 +423,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"X-Callback-URL","level":"3.1","depth":1,"previous":{"title":"Web Snapshot Extension","level":"2.3","depth":1,"path":"guide-web-snapshot.md","ref":"guide-web-snapshot.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","custom-favicon"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"favicon":"favicon.ico","search-pro":{},"custom-favicon":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"sugarmo","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Picsew Documentation","language":"en","gitbook":"*"},"file":{"path":"x-callback-url.md","mtime":"2018-10-25T02:24:13.023Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-25T02:26:27.246Z"},"basePath":".","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"X-Callback-URL","level":"3.1","depth":1,"previous":{"title":"Web Snapshot Extension","level":"2.3","depth":1,"path":"guide-web-snapshot.md","ref":"guide-web-snapshot.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","custom-favicon"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"favicon":"favicon.ico","search-pro":{},"custom-favicon":{},"livereload":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"sugarmo","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Picsew Documentation","language":"en","gitbook":"*"},"file":{"path":"x-callback-url.md","mtime":"2019-10-10T09:32:42.673Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-10T09:35:12.598Z"},"basePath":".","book":{"language":"en"}});
         });
     </script>
 </div>
@@ -447,6 +438,10 @@
     
         
         <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

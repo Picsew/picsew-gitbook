@@ -1,1 +1,1 @@
-替换 CNAME 和 node_modules 以外的所有文件。
+替换 本文档、 CNAME 和 node_modules 以外的所有文件。
